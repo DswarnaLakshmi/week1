@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/signup.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+    <div class="container">
+        <div class="header">Registration</div>
+    <div class="details">
+        <div class="in"> 
+            <input type=text id="firstName" placeholder="First Name" name="firstName">
+            <div class="error"><span id="fnerror"></span></div>
+        </div>
+        <div class="in">   
+            <input type=text id="lastName" placeholder="Last Name" name="lastName">
+            <div class="error"><span id="lnerror"></span></div>
+        </div> 
+    </div>
+    <div class="details"> 
+        <div class="in">
+            <input type="email" id="email" placeholder="Email" name="email" >
+            <div class="error"><span id="eerror"></span></div><br>
+        </div>
+        <div class="in">
+            <input type=text id="phonenumber" placeholder="Phone Number">
+            <div class="error"><span id="pnerror"></span></div>
+        </div>
+    </div>
+    <div class="details">
+        <div class="in">
+            <input type=password id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <div class="error"><span id="lerror"></span></div>
+        </div>
+        <div class="in">
+            <input type=password id="cpassword" placeholder="Confirm Password">
+            <div class="error"><span id="perror"></span></div>
+        </div>
+    </div>
+    <div class="details">
+        <div class="set" id="genders">
+            <input type="radio" id="mgender" name="gender" value="Male"> Male
+            <input type="radio" id="fgender" name="gender" value="Female" checked="checked"> Female
+            <div class="error"><span id="gerror"></span></div>   
+        </div>
+        <div class="set">
+            <label>Select Age</label>
+            <select id='some_selector'></select>
+            <div class="error"><span id="aerror"></span></div>
+        </div>
+    </div>
+        <div class="set">
+            <input type=checkbox id="checkBox" name="Yes">
+            <label>I accept the <a href="">Terms of Use</a> & <a href="">Privacy Policy</a></label>
+            <div class="error"><span id="cerror"></span></div>
+            <div class="error"><span id="ierror"></span></div>
+        </div>
+
+        <div>
+            <button id="signupBtn" onclick ="signup()">SignUp</button>
+        </div>
+        <div class="sg">Already have an account?<a href="http://localhost:3000/users/login" class="sgcl"> Sign in</a></div>
+    </div>
+    </div>
+    </body>
+    <script src="/javascripts/user.js"></script>
+</html>

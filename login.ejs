@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/login.css" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+    <div class="container">
+        <div class ="h">Login</div>
+            <div><span id="error" class="error"></span></div>
+        <div class="in">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <div class="error"><span id="eerror" ></span></div>
+        </div>
+        <div class="in">
+            <input type=password id="password" name="password" placeholder="Password">
+            <div class="error"><span id="perror"></span></div>
+        </div>
+        <div class="click">
+            <button id="loginBtn" onclick = "login()">Login</button>
+            <div class="sign">Don't have an account?<a href="http://localhost:3000/users/signup" id="signupBtn"> Sign Up</a></div>
+            <div class="fp"><a href="">ForgetPassward</a></div>
+        </div>
+    </div>
+    </body>
+    <script src="/javascripts/user.js"></script>
+</html>
