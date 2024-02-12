@@ -1,0 +1,126 @@
+@media only screen and (min-width: 320px){
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #607680;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+.header{
+    background-color: #f7f7f7;
+    padding: 10px 60px;
+    width: 440px;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 30px;
+    color: #050504;
+    font-weight: 600;
+    font-family: rgb(151, 39, 39) serif;
+    margin: 10px; 
+}
+.container{
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+    max-width: 600px;
+    overflow: hidden;
+    padding: 30px 20px;
+    color: #040c06;
+}
+.container .details{
+    display: flex;
+}
+.in {
+    width: 380px;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #060706;
+    font-weight: 500;
+    font-family: serif;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    position: relative;
+}
+#signupBtn{
+    width: 100px;
+    height: 40px;
+    font-size: 23px;
+    background-color: #13cf52;
+    color: rgb(15, 15, 15);
+    margin-top: 20px;
+    margin-left: 180px;
+    border: none;
+    cursor: pointer;
+}
+.in input:not(.terms){
+    display: block;
+    border-radius: 4px;
+    border:2px solid #f0f0f0;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+.error{
+    font-size: 10px;
+    color: #e74c3c;
+}
+.fnerror{
+    font-size: 10px;
+    color: #e74c3c;
+}
+.lnerror{
+    font-size: 10px;
+    color: #e74c3c;
+}
+.eerror{
+    font-size: 10px;
+    color: #e74c3c;
+}
+.pnerror{
+    font-size: 10px;
+    color: #e74c3c;
+}
+.lerror{
+    font-size: 10px;
+    color: #e74c3c;
+}.perror{
+    font-size: 10px;
+    color: #e74c3c;
+}.gerror{
+    font-size: 10px;
+    color: #e74c3c;
+}
+.aerror{
+    font-size: 10px;
+    color: #e74c3c;
+}.cerror{
+    font-size: 10px;
+    color: #e74c3c;
+}.ierror{
+    font-size: 10px;
+    color: #e74c3c;
+}
+.set{
+    width: 1500px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+a:visited {
+    color: green;
+  }
+.sg{
+    text-align: center;
+    margin-top: 10px;
+}
+}
